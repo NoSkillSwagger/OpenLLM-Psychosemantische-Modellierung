@@ -1,0 +1,84 @@
+model,cue,A1,A2,A3
+llama3.1:8b,cue,word,response,noun
+llama3.1:8b,archeology,Egyptians,ruins,bones
+llama3.1:8b,hurtful,painful,cruel,No
+llama3.1:8b,nacho,cheese,taco,salsa
+llama3.1:8b,unsafe,risky,hazardous,No more responses
+llama3.1:8b,hummingbird,bird,beak,No
+llama3.1:8b,coast,shore,beach,ocean
+llama3.1:8b,immature,youthful,childish,No more responses
+llama3.1:8b,ligament,tendon,knee,muscle
+llama3.1:8b,shield,armor,defend,protect
+llama3.1:8b,vegetarian,diet,vegan,animal
+llama3.1:8b,parcel,box,package,address
+llama3.1:8b,madly,crazy,silly,wild
+llama3.1:8b,traveler,backpacker,tourist,No more responses
+llama3.1:8b,gum,sticky,sweet,chewy
+llama3.1:8b,juicer,blender,smoothie,orange
+llama3.1:8b,hovercraft,airship,balloon,No more responses
+llama3.1:8b,text,cotton,thread,silk
+llama3.1:8b,captivity,prison,freedom,chains
+llama3.1:8b,lamb,meat,wool,No more responses
+llama3.1:8b,failure,defeat,loss,tragedy
+llama3.1:8b,governance,politics,leadership,No more responses
+llama3.1:8b,electricity,light,power,energy
+llama3.1:8b,celebrity,star,actor,film
+llama3.1:8b,extroverted,outgoing,talkative,sociable
+llama3.1:8b,breed,dog,cat,rare
+llama3.1:8b,frustrated,angry,disappointed,No
+llama3.1:8b,dialogue,conversation,discussing,No more responses
+llama3.1:8b,unrealistic,impossible,fantasy,No
+llama3.1:8b,hobble,limp,walk,No
+llama3.1:8b,unripe,green,mature,No
+llama3.1:8b,boxer,fighter,puncher,knocker
+llama3.1:8b,laborer,worker,manual,No more responses
+llama3.1:8b,atheism,Godless,Morals,No more responses
+llama3.1:8b,autumn,leaves,snow,No
+llama3.1:8b,sweatshop,factory,exploit,No
+llama3.1:8b,veer,deviate,swerve,tangents
+llama3.1:8b,mystical,magic,occult,No
+llama3.1:8b,gods,power,heaven,angels
+llama3.1:8b,sterile,antiseptic,infection,No more responses
+llama3.1:8b,mailbox,postman,letters,mail
+llama3.1:8b,rundown,deteriorated,weakened,tattered
+llama3.1:8b,execute,action,order,response
+llama3.1:8b,hitchhike,traveler,driver,journey
+llama3.1:8b,intoxicate,drunk,poison,No more responses
+llama3.1:8b,complete,full,whole,No
+llama3.1:8b,vomit,nausea,regret,nauseating
+llama3.1:8b,civilization,society,culture,history
+llama3.1:8b,let,go,hand,No more responses
+llama3.1:8b,gifted,talent,intelligence,creativity
+llama3.1:8b,whiskers,cat,beard,hairy
+llama3.1:8b,lore,myth,legend,history
+llama3.1:8b,Norway,Oslo,Fjord,Viking
+llama3.1:8b,petrol,fuel,gasoline,No more responses
+llama3.1:8b,Islam,Muslims,Radical,No more responses
+llama3.1:8b,mitten,glove,frostbite,coldness
+llama3.1:8b,cozy,blanket,warmth,softness
+llama3.1:8b,head,brain,hair,bald
+llama3.1:8b,mints,peppermint,sugar,No more responses
+llama3.1:8b,chauffeur,driver,car,passenger
+llama3.1:8b,constant,change,variable,pattern
+llama3.1:8b,zeal,passion,energy,No
+llama3.1:8b,periscope,telescope,marine,No more responses
+llama3.1:8b,oddity,curiosity,anomaly,normalcy
+llama3.1:8b,monotonous,boring,tedious,No more responses
+llama3.1:8b,stupid,idiot,foolish,mean
+llama3.1:8b,her,wife,woman,daughter
+llama3.1:8b,scribe,writer,pen,No more responses
+llama3.1:8b,campfire,roasting,smoke,No more responses
+llama3.1:8b,cartoon,anime,Disney,No
+llama3.1:8b,contempt,disgust,hatred,No more responses
+llama3.1:8b,tom,couch,bedroom,No
+llama3.1:8b,devil,satanic,evil,hell
+llama3.1:8b,tuba,brass,musician,bass
+llama3.1:8b,algae,ocean,green,bloom
+llama3.1:8b,crows,black,birds,No
+llama3.1:8b,martial art,karate,judo,tai
+llama3.1:8b,medic,doctor,hospital,No more responses
+llama3.1:8b,pesky,bug,nuisance,trouble
+llama3.1:8b,stretch,yoga,exercise,sport
+llama3.1:8b,thrifty,frugal,cheap,No
+llama3.1:8b,flawed,defect,problem,nocorrelation
+llama3.1:8b,term,contract,agreement,condition
