@@ -1,0 +1,101 @@
+model,cue,A1,A2,A3
+qwen3:0.6b,Cheddar,chick,chickens,chick
+qwen3:0.6b,Parmesan,Parmesan,Parmesan,Parmesan
+qwen3:0.6b,bubonic,bubonic,population,bubonic
+qwen3:0.6b,moo,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,halt,stop,end,halt
+qwen3:0.6b,inebriated,drunk,coked,insulted
+qwen3:0.6b,arachnid,spider,spider,spider
+qwen3:0.6b,elm,elm,elm,elm
+qwen3:0.6b,brie,fondue,cake,No more
+qwen3:0.6b,pituitary,pituitary,pituitary hormone,pituitary function
+qwen3:0.6b,wick,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,perspire,stir,burn,exert
+qwen3:0.6b,feline,lion,cat,dog
+qwen3:0.6b,mozzarella,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,brewery,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,smooch,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,sill,sill,sill,sill
+qwen3:0.6b,cob,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,newborn,baby,child,lactating
+qwen3:0.6b,physician,strongest,expert,doctor
+qwen3:0.6b,teddy,toys,bed,toddler
+qwen3:0.6b,marrow,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,impolite,unkind,unfriendly,unlucky
+qwen3:0.6b,cobra,snake,cyclops,tail
+qwen3:0.6b,perhaps,possess,allow,possess again
+qwen3:0.6b,retina,eye,retina,retinal
+qwen3:0.6b,oink,oink,oink,oink
+qwen3:0.6b,hound,hound,mate,task
+qwen3:0.6b,Sahara,desert,planet,sky
+qwen3:0.6b,not good,negative,poor,weak
+qwen3:0.6b,grizzly,bear,bear with,bear's
+qwen3:0.6b,uncooked,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,maize,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,meow,dog,cat,mouse
+qwen3:0.6b,fir,fire,fireup,fireaway
+qwen3:0.6b,loaf,loaf,loafy,loafy bread
+qwen3:0.6b,holster,hold,stow,secure
+qwen3:0.6b,search engine,search engine,search database,information
+qwen3:0.6b,lager,slow,gentle,lazy
+qwen3:0.6b,inexpensive,cost-effective,affordable,priceless
+qwen3:0.6b,fib,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,viper,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,yolk,yolk,yolk,yolk
+qwen3:0.6b,grater,tool,measure,increase
+qwen3:0.6b,heifer,heifer,heavier,heavier
+qwen3:0.6b,down under,down,under,below
+qwen3:0.6b,cashew,cashew,cashew,cashew
+qwen3:0.6b,steed,steer,herd,steer
+qwen3:0.6b,exhausted,burned,drowsy,nervous
+qwen3:0.6b,comprehend,understand,know,interpret
+qwen3:0.6b,cheerful,happy,joyful,cheerful
+qwen3:0.6b,obese,obese,overweight,obese
+qwen3:0.6b,itch,burning,tightening,aching
+qwen3:0.6b,nostril,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,spud,spud,No more responses,No more responses
+qwen3:0.6b,udder,water,hammer,submerge
+qwen3:0.6b,hare,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,parchment,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,weep,sigh,sadness,lonely
+qwen3:0.6b,perspiration,sweat,thirst,hunger
+qwen3:0.6b,despise,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,honeydew,red wine,white wine,vintage
+qwen3:0.6b,sirloin,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,serpent,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,beagle,bark,barker,barker
+qwen3:0.6b,cod,code,coda,coda
+qwen3:0.6b,tardy,late,time,delayed
+qwen3:0.6b,stallion,deer,horse,stallion
+qwen3:0.6b,gust,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,purr,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,jigsaw,jigsaw,glue,stack
+qwen3:0.6b,dromedary,dromedary,horse,drome
+qwen3:0.6b,automobile,engine,chassis,body
+qwen3:0.6b,giggle,funny,happy,joy
+qwen3:0.6b,grown up,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,saddle,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,educator,teacher,mentor,guidance
+qwen3:0.6b,Cairo,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,concur,agree,agree with,agree in
+qwen3:0.6b,weary,tired,weak,drowsy
+qwen3:0.6b,spotless,perfect,unbroken,completely
+qwen3:0.6b,petal,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,misplaced,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,kitty,kitty cat,kitty pajamas,kitty rabbit
+qwen3:0.6b,intoxicated,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,vehicle,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,attempt,attempt,try,attempt
+qwen3:0.6b,unattractive,unattractive,No more,No more
+qwen3:0.6b,trousers,tshirts,tux,trousers
+qwen3:0.6b,espresso,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,sufficient,enough,full,complete
+qwen3:0.6b,orchid,rose,lily,pets
+qwen3:0.6b,hilarious,hilarious,funny,awe
+qwen3:0.6b,fedora,hat,sash,crown
+qwen3:0.6b,deity,deity,deity,deity
+qwen3:0.6b,arid,dry,salty,scorching
+qwen3:0.6b,wager,game,bet,win
+qwen3:0.6b,spectacles,lenses,eyeglasses,mirrors
+qwen3:0.6b,brawl,wrestle,fight,attack
+qwen3:0.6b,leash,Invalid Response,Invalid Response,Invalid Response

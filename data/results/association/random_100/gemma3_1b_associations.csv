@@ -1,0 +1,101 @@
+model,cue,A1,A2,A3
+gemma3:1b,Cheddar,strongest,cheese,milk
+gemma3:1b,Parmesan,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,bubonic,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,moo,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,halt,no movement,motion,pause
+gemma3:1b,inebriated,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,arachnid,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,elm,strongest,crisp,bright
+gemma3:1b,brie,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,pituitary,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,wick,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,perspire,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,feline,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,mozzarella,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,brewery,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,smooch,soft,kiss,touch
+gemma3:1b,sill,strongest,creature,shape
+gemma3:1b,cob,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,newborn,strongest,baby,life
+gemma3:1b,physician,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,teddy,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,marrow,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,impolite,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,cobra,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,perhaps,strongest,power,impact
+gemma3:1b,retina,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,oink,strongest,pig,sound
+gemma3:1b,hound,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,Sahara,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,not good,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,grizzly,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,uncooked,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,maize,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,meow,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,fir,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,loaf,strongest,sweet,warm
+gemma3:1b,holster,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,search engine,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,lager,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,inexpensive,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,fib,fib,strongest,closest
+gemma3:1b,viper,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,yolk,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,grater,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,heifer,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,down under,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,cashew,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,steed,strongest,quick,swift
+gemma3:1b,exhausted,exhausted,tired,sleep
+gemma3:1b,comprehend,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,cheerful,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,obese,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,itch,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,nostril,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,spud,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,udder,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,hare,strongest,quick,wild
+gemma3:1b,parchment,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,weep,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,perspiration,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,despise,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,honeydew,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,sirloin,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,serpent,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,beagle,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,cod,strongest,powerful,brief
+gemma3:1b,tardy,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,stallion,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,gust,strongest,quick,bittery
+gemma3:1b,purr,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,jigsaw,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,dromedary,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,automobile,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,giggle,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,grown up,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,saddle,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,educator,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,Cairo,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,concur,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,weary,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,spotless,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,petal,strongest,soft,bright
+gemma3:1b,misplaced,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,kitty,strongest,playful,cute
+gemma3:1b,intoxicated,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,vehicle,strongest,fast,powerful
+gemma3:1b,attempt,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,unattractive,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,trousers,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,espresso,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,sufficient,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,orchid,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,hilarious,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,fedora,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,deity,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,arid,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,wager,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,spectacles,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,brawl,Invalid Response,Invalid Response,Invalid Response
+gemma3:1b,leash,Invalid Response,Invalid Response,Invalid Response

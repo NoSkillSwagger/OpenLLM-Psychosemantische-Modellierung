@@ -1,0 +1,354 @@
+model,w1,w2,rating
+qwen3:0.6b,love,sex,10
+qwen3:0.6b,tiger,cat,4
+qwen3:0.6b,tiger,tiger,10
+qwen3:0.6b,book,paper,4
+qwen3:0.6b,computer,keyboard,Invalid Response
+qwen3:0.6b,computer,internet,4
+qwen3:0.6b,plane,car,7
+qwen3:0.6b,train,car,7
+qwen3:0.6b,telephone,communication,10
+qwen3:0.6b,television,radio,10
+qwen3:0.6b,media,radio,7
+qwen3:0.6b,drug,abuse,10
+qwen3:0.6b,bread,butter,7
+qwen3:0.6b,cucumber,potato,7
+qwen3:0.6b,doctor,nurse,7
+qwen3:0.6b,professor,doctor,7
+qwen3:0.6b,student,professor,4
+qwen3:0.6b,smart,student,student
+qwen3:0.6b,smart,stupid,0
+qwen3:0.6b,company,stock,7
+qwen3:0.6b,stock,market,10
+qwen3:0.6b,stock,phone,10
+qwen3:0.6b,stock,CD,Invalid Response
+qwen3:0.6b,stock,jaguar,10
+qwen3:0.6b,stock,egg,0
+qwen3:0.6b,fertility,egg,7
+qwen3:0.6b,stock,live,Invalid Response
+qwen3:0.6b,stock,life,7
+qwen3:0.6b,book,library,0
+qwen3:0.6b,bank,money,7
+qwen3:0.6b,wood,forest,7
+qwen3:0.6b,money,cash,10
+qwen3:0.6b,professor,cucumber,Invalid Response
+qwen3:0.6b,king,cabbage,0
+qwen3:0.6b,king,queen,7
+qwen3:0.6b,king,rook,0
+qwen3:0.6b,bishop,rabbi,10
+qwen3:0.6b,Jerusalem,Israel,4
+qwen3:0.6b,Jerusalem,Palestinian,4
+qwen3:0.6b,holy,sex,Invalid Response
+qwen3:0.6b,fuck,sex,7
+qwen3:0.6b,Maradona,football,4
+qwen3:0.6b,football,soccer,10
+qwen3:0.6b,football,basketball,10
+qwen3:0.6b,football,tennis,7
+qwen3:0.6b,tennis,racket,Invalid Response
+qwen3:0.6b,Arafat,peace,Invalid Response
+qwen3:0.6b,Arafat,terror,4
+qwen3:0.6b,Arafat,Jackson,10
+qwen3:0.6b,law,lawyer,7
+qwen3:0.6b,movie,star,4
+qwen3:0.6b,movie,popcorn,0
+qwen3:0.6b,movie,critic,0
+qwen3:0.6b,movie,theater,7
+qwen3:0.6b,physics,proton,7
+qwen3:0.6b,physics,chemistry,7
+qwen3:0.6b,space,chemistry,Invalid Response
+qwen3:0.6b,alcohol,chemistry,10
+qwen3:0.6b,vodka,gin,10
+qwen3:0.6b,vodka,brandy,10
+qwen3:0.6b,drink,car,Invalid Response
+qwen3:0.6b,drink,ear,Invalid Response
+qwen3:0.6b,drink,mouth,0
+qwen3:0.6b,drink,eat,7
+qwen3:0.6b,baby,mother,0
+qwen3:0.6b,drink,mother,0
+qwen3:0.6b,car,automobile,10
+qwen3:0.6b,gem,jewel,10
+qwen3:0.6b,journey,voyage,7
+qwen3:0.6b,boy,lad,10
+qwen3:0.6b,coast,shore,10
+qwen3:0.6b,asylum,madhouse,7
+qwen3:0.6b,magician,wizard,10
+qwen3:0.6b,midday,noon,10
+qwen3:0.6b,furnace,stove,8
+qwen3:0.6b,food,fruit,7
+qwen3:0.6b,bird,cock,10
+qwen3:0.6b,bird,crane,10
+qwen3:0.6b,tool,implement,8
+qwen3:0.6b,brother,monk,10
+qwen3:0.6b,crane,implement,7
+qwen3:0.6b,lad,brother,10
+qwen3:0.6b,journey,car,0
+qwen3:0.6b,monk,oracle,4
+qwen3:0.6b,cemetery,woodland,7
+qwen3:0.6b,food,rooster,10
+qwen3:0.6b,coast,hill,0
+qwen3:0.6b,forest,graveyard,4
+qwen3:0.6b,shore,woodland,4
+qwen3:0.6b,monk,slave,0
+qwen3:0.6b,coast,forest,0
+qwen3:0.6b,lad,wizard,10
+qwen3:0.6b,chord,smile,Invalid Response
+qwen3:0.6b,glass,magician,0
+qwen3:0.6b,noon,string,0
+qwen3:0.6b,rooster,voyage,Invalid Response
+qwen3:0.6b,money,dollar,10
+qwen3:0.6b,money,cash,10
+qwen3:0.6b,money,currency,10
+qwen3:0.6b,money,wealth,10
+qwen3:0.6b,money,property,10
+qwen3:0.6b,money,possession,7
+qwen3:0.6b,money,bank,10
+qwen3:0.6b,money,deposit,7
+qwen3:0.6b,money,withdrawal,7
+qwen3:0.6b,money,laundering,0
+qwen3:0.6b,money,operation,10
+qwen3:0.6b,tiger,jaguar,7
+qwen3:0.6b,tiger,feline,10
+qwen3:0.6b,tiger,carnivore,10
+qwen3:0.6b,tiger,mammal,10
+qwen3:0.6b,tiger,animal,7
+qwen3:0.6b,tiger,organism,7
+qwen3:0.6b,tiger,fauna,7
+qwen3:0.6b,tiger,zoo,0
+qwen3:0.6b,psychology,psychiatry,7
+qwen3:0.6b,psychology,anxiety,7
+qwen3:0.6b,psychology,fear,4
+qwen3:0.6b,psychology,depression,7
+qwen3:0.6b,psychology,clinic,0
+qwen3:0.6b,psychology,doctor,Invalid Response
+qwen3:0.6b,psychology,Freud,7
+qwen3:0.6b,psychology,mind,10
+qwen3:0.6b,psychology,health,4
+qwen3:0.6b,psychology,science,10
+qwen3:0.6b,psychology,discipline,7
+qwen3:0.6b,psychology,cognition,7
+qwen3:0.6b,planet,star,4
+qwen3:0.6b,planet,constellation,4
+qwen3:0.6b,planet,moon,8
+qwen3:0.6b,planet,sun,7
+qwen3:0.6b,planet,galaxy,7
+qwen3:0.6b,planet,space,6
+qwen3:0.6b,planet,astronomer,7
+qwen3:0.6b,precedent,example,7
+qwen3:0.6b,precedent,information,4
+qwen3:0.6b,precedent,cognition,7
+qwen3:0.6b,precedent,law,7
+qwen3:0.6b,precedent,collection,Invalid Response
+qwen3:0.6b,precedent,group,10
+qwen3:0.6b,precedent,antecedent,7
+qwen3:0.6b,cup,coffee,7
+qwen3:0.6b,cup,tableware,6
+qwen3:0.6b,cup,article,0
+qwen3:0.6b,cup,artifact,8
+qwen3:0.6b,cup,object,7
+qwen3:0.6b,cup,entity,0
+qwen3:0.6b,cup,drink,4
+qwen3:0.6b,cup,food,0
+qwen3:0.6b,cup,substance,7
+qwen3:0.6b,cup,liquid,10
+qwen3:0.6b,jaguar,cat,7
+qwen3:0.6b,jaguar,car,Invalid Response
+qwen3:0.6b,energy,secretary,10
+qwen3:0.6b,secretary,senate,0
+qwen3:0.6b,energy,laboratory,0
+qwen3:0.6b,computer,laboratory,7
+qwen3:0.6b,weapon,secret,0
+qwen3:0.6b,FBI,fingerprint,0
+qwen3:0.6b,FBI,investigation,7
+qwen3:0.6b,investigation,effort,7
+qwen3:0.6b,Mars,water,6
+qwen3:0.6b,Mars,scientist,7
+qwen3:0.6b,news,report,7
+qwen3:0.6b,canyon,landscape,5
+qwen3:0.6b,image,surface,0
+qwen3:0.6b,discovery,space,Invalid Response
+qwen3:0.6b,water,seepage,7
+qwen3:0.6b,sign,recess,4
+qwen3:0.6b,Wednesday,news,10
+qwen3:0.6b,mile,kilometer,8
+qwen3:0.6b,computer,news,4
+qwen3:0.6b,territory,surface,7
+qwen3:0.6b,atmosphere,landscape,4
+qwen3:0.6b,president,medal,0
+qwen3:0.6b,war,troops,7
+qwen3:0.6b,record,number,0
+qwen3:0.6b,skin,eye,Invalid Response
+qwen3:0.6b,Japanese,American,Invalid Response
+qwen3:0.6b,theater,history,10
+qwen3:0.6b,volunteer,motto,Invalid Response
+qwen3:0.6b,prejudice,recognition,0
+qwen3:0.6b,decoration,valor,7
+qwen3:0.6b,century,year,10
+qwen3:0.6b,century,nation,10
+qwen3:0.6b,delay,racism,10
+qwen3:0.6b,delay,news,Invalid Response
+qwen3:0.6b,minister,party,7
+qwen3:0.6b,peace,plan,7
+qwen3:0.6b,minority,peace,0
+qwen3:0.6b,attempt,peace,Invalid Response
+qwen3:0.6b,government,crisis,0
+qwen3:0.6b,deployment,departure,7
+qwen3:0.6b,deployment,withdrawal,0
+qwen3:0.6b,energy,crisis,0
+qwen3:0.6b,announcement,news,10
+qwen3:0.6b,announcement,effort,0
+qwen3:0.6b,stroke,hospital,4
+qwen3:0.6b,disability,death,0
+qwen3:0.6b,victim,emergency,4
+qwen3:0.6b,treatment,recovery,7
+qwen3:0.6b,journal,association,6
+qwen3:0.6b,doctor,personnel,4
+qwen3:0.6b,doctor,liability,0
+qwen3:0.6b,liability,insurance,Invalid Response
+qwen3:0.6b,school,center,Invalid Response
+qwen3:0.6b,reason,hypertension,10
+qwen3:0.6b,reason,criterion,7
+qwen3:0.6b,hundred,percent,7
+qwen3:0.6b,Harvard,Yale,Invalid Response
+qwen3:0.6b,hospital,infrastructure,6
+qwen3:0.6b,death,row,0
+qwen3:0.6b,death,inmate,7
+qwen3:0.6b,lawyer,evidence,Invalid Response
+qwen3:0.6b,life,death,0
+qwen3:0.6b,life,term,7
+qwen3:0.6b,word,similarity,10
+qwen3:0.6b,board,recommendation,4
+qwen3:0.6b,governor,interview,Invalid Response
+qwen3:0.6b,OPEC,country,7
+qwen3:0.6b,peace,atmosphere,10
+qwen3:0.6b,peace,insurance,4
+qwen3:0.6b,territory,kilometer,10
+qwen3:0.6b,travel,activity,7
+qwen3:0.6b,competition,price,0
+qwen3:0.6b,consumer,confidence,0
+qwen3:0.6b,consumer,energy,0
+qwen3:0.6b,problem,airport,0
+qwen3:0.6b,car,flight,0
+qwen3:0.6b,credit,card,7
+qwen3:0.6b,credit,information,7
+qwen3:0.6b,hotel,reservation,0
+qwen3:0.6b,grocery,money,4
+qwen3:0.6b,registration,arrangement,7
+qwen3:0.6b,arrangement,accommodation,0
+qwen3:0.6b,month,hotel,0
+qwen3:0.6b,type,kind,7
+qwen3:0.6b,arrival,hotel,10
+qwen3:0.6b,bed,closet,0
+qwen3:0.6b,closet,clothes,10
+qwen3:0.6b,situation,conclusion,7
+qwen3:0.6b,situation,isolation,7
+qwen3:0.6b,impartiality,interest,10
+qwen3:0.6b,direction,combination,2
+qwen3:0.6b,street,place,7
+qwen3:0.6b,street,avenue,7
+qwen3:0.6b,street,block,0
+qwen3:0.6b,street,children,6
+qwen3:0.6b,listing,proximity,4
+qwen3:0.6b,listing,category,7
+qwen3:0.6b,cell,phone,7
+qwen3:0.6b,production,hike,0
+qwen3:0.6b,benchmark,index,4
+qwen3:0.6b,media,trading,0
+qwen3:0.6b,media,gain,0
+qwen3:0.6b,dividend,payment,7
+qwen3:0.6b,dividend,calculation,7
+qwen3:0.6b,calculation,computation,10
+qwen3:0.6b,currency,market,4
+qwen3:0.6b,OPEC,oil,Invalid Response
+qwen3:0.6b,oil,stock,Invalid Response
+qwen3:0.6b,announcement,production,0
+qwen3:0.6b,announcement,warning,0
+qwen3:0.6b,profit,warning,Invalid Response
+qwen3:0.6b,profit,loss,10
+qwen3:0.6b,dollar,yen,10
+qwen3:0.6b,dollar,buck,7
+qwen3:0.6b,dollar,profit,7
+qwen3:0.6b,dollar,loss,0
+qwen3:0.6b,computer,software,7
+qwen3:0.6b,network,hardware,0
+qwen3:0.6b,phone,equipment,4
+qwen3:0.6b,equipment,maker,4
+qwen3:0.6b,luxury,car,7
+qwen3:0.6b,five,month,0
+qwen3:0.6b,report,gain,0
+qwen3:0.6b,investor,earning,6
+qwen3:0.6b,liquid,water,10
+qwen3:0.6b,baseball,season,4
+qwen3:0.6b,game,victory,6
+qwen3:0.6b,game,team,4
+qwen3:0.6b,marathon,sprint,4
+qwen3:0.6b,game,series,0
+qwen3:0.6b,game,defeat,7
+qwen3:0.6b,seven,series,4
+qwen3:0.6b,seafood,sea,0
+qwen3:0.6b,seafood,food,10
+qwen3:0.6b,seafood,lobster,7
+qwen3:0.6b,lobster,food,0
+qwen3:0.6b,lobster,wine,0
+qwen3:0.6b,food,preparation,7
+qwen3:0.6b,video,archive,4
+qwen3:0.6b,start,year,Invalid Response
+qwen3:0.6b,start,match,7
+qwen3:0.6b,game,round,7
+qwen3:0.6b,boxing,round,4
+qwen3:0.6b,championship,tournament,7
+qwen3:0.6b,fighting,defeating,10
+qwen3:0.6b,line,insurance,0
+qwen3:0.6b,day,summer,Invalid Response
+qwen3:0.6b,summer,drought,7
+qwen3:0.6b,summer,nature,10
+qwen3:0.6b,day,dawn,10
+qwen3:0.6b,nature,environment,10
+qwen3:0.6b,environment,ecology,7
+qwen3:0.6b,nature,man,4
+qwen3:0.6b,man,woman,10
+qwen3:0.6b,man,governor,10
+qwen3:0.6b,murder,manslaughter,10
+qwen3:0.6b,soap,opera,0
+qwen3:0.6b,opera,performance,7
+qwen3:0.6b,life,lesson,7
+qwen3:0.6b,focus,life,Invalid Response
+qwen3:0.6b,production,crew,5
+qwen3:0.6b,television,film,7
+qwen3:0.6b,lover,quarrel,0
+qwen3:0.6b,viewer,serial,0
+qwen3:0.6b,possibility,girl,0
+qwen3:0.6b,population,development,4
+qwen3:0.6b,morality,importance,7
+qwen3:0.6b,morality,marriage,0
+qwen3:0.6b,Mexico,Brazil,4
+qwen3:0.6b,gender,equality,4
+qwen3:0.6b,change,attitude,7
+qwen3:0.6b,family,planning,0
+qwen3:0.6b,opera,industry,0
+qwen3:0.6b,sugar,approach,10
+qwen3:0.6b,practice,institution,7
+qwen3:0.6b,ministry,culture,0
+qwen3:0.6b,problem,challenge,7
+qwen3:0.6b,size,prominence,0
+qwen3:0.6b,country,citizen,7
+qwen3:0.6b,planet,people,0
+qwen3:0.6b,development,issue,4
+qwen3:0.6b,experience,music,0
+qwen3:0.6b,music,project,5
+qwen3:0.6b,glass,metal,10
+qwen3:0.6b,aluminum,metal,10
+qwen3:0.6b,chance,credibility,Invalid Response
+qwen3:0.6b,exhibit,memorabilia,7
+qwen3:0.6b,concert,virtuoso,10
+qwen3:0.6b,rock,jazz,0
+qwen3:0.6b,museum,theater,4
+qwen3:0.6b,observation,architecture,0
+qwen3:0.6b,space,world,0
+qwen3:0.6b,preservation,world,7
+qwen3:0.6b,admission,ticket,8
+qwen3:0.6b,shower,thunderstorm,7
+qwen3:0.6b,shower,flood,Invalid Response
+qwen3:0.6b,weather,forecast,0
+qwen3:0.6b,disaster,area,0
+qwen3:0.6b,governor,office,7
+qwen3:0.6b,architecture,century,10
