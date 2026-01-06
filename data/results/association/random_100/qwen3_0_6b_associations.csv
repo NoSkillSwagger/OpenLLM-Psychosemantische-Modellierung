@@ -1,101 +1,101 @@
 model,cue,A1,A2,A3
-qwen3:0.6b,Cheddar,chick,cheddar,chick
-qwen3:0.6b,Parmesan,Parmesan,Parmesan,Parmesan
-qwen3:0.6b,bubonic,bubonic,bubonic,bubonic
-qwen3:0.6b,moo,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,halt,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,inebriated,drunk,dope,intoxicated
-qwen3:0.6b,arachnid,spiny,spiny,jointed
-qwen3:0.6b,elm,elm tree,elm seed,elm bark
-qwen3:0.6b,brie,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,pituitary,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,wick,wooden,tight,tight
-qwen3:0.6b,perspire,breathe,breathe,inflate
-qwen3:0.6b,feline,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,mozzarella,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,brewery,brew,brow,brower
-qwen3:0.6b,smooch,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,sill,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,cob,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,newborn,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,physician,physician,doctor,nurse
-qwen3:0.6b,teddy,doggy,toddler,teddy bear
-qwen3:0.6b,marrow,fill,cover,matter
-qwen3:0.6b,impolite,unkind,unpolite,unfriendly
-qwen3:0.6b,cobra,snake,snake,cobra
-qwen3:0.6b,perhaps,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,retina,retina,retina,retina
-qwen3:0.6b,oink,oink,oink,oink
-qwen3:0.6b,hound,wolf,dog,hound
-qwen3:0.6b,Sahara,desert,sahara,sahara
-qwen3:0.6b,not good,bad,poor,neglect
-qwen3:0.6b,grizzly,bear,forest,hunt
-qwen3:0.6b,uncooked,uncooked,uncooked,uncooked
-qwen3:0.6b,maize,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,meow,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,fir,fir,elm,No more
-qwen3:0.6b,loaf,loaf,bake,bake
-qwen3:0.6b,holster,hold,stow,No more
-qwen3:0.6b,search engine,search engine,search engine optimization,search engine
-qwen3:0.6b,lager,laziness,laziness,laziness
-qwen3:0.6b,inexpensive,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,fib,fiber,fib,fib
-qwen3:0.6b,viper,snake,viper,viper's body
-qwen3:0.6b,yolk,yolk,egg,yolk
-qwen3:0.6b,grater,larger,more,gigantic
-qwen3:0.6b,heifer,heifer,heavier,heavier
-qwen3:0.6b,down under,down,beneath,deeper
-qwen3:0.6b,cashew,tree,leaves,nut
-qwen3:0.6b,steed,steer,steer,steer
-qwen3:0.6b,exhausted,burned,fueled,drained
-qwen3:0.6b,comprehend,understand,appreciate,analyze
-qwen3:0.6b,cheerful,happy,excited,joyful
-qwen3:0.6b,obese,obese,obese,obese
-qwen3:0.6b,itch,itch,itchy,skin
-qwen3:0.6b,nostril,nostril,nostril,nostril
-qwen3:0.6b,spud,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,udder,push,pull,push over
-qwen3:0.6b,hare,hare,hare,hare
-qwen3:0.6b,parchment,sheet,canvas,cloth
-qwen3:0.6b,weep,crying,tear,suck
-qwen3:0.6b,perspiration,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,despise,dislike,disgust,unhappy
-qwen3:0.6b,honeydew,flower,nectar,honeydew
-qwen3:0.6b,sirloin,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,serpent,serp,snake,serp
-qwen3:0.6b,beagle,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,cod,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,tardy,delay,late,late
-qwen3:0.6b,stallion,horse,male,stallion
-qwen3:0.6b,gust,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,purr,purr,purr,purr
-qwen3:0.6b,jigsaw,pieces,parts,solving
-qwen3:0.6b,dromedary,drome,drome,drome
-qwen3:0.6b,automobile,car,automobiles,driver
-qwen3:0.6b,giggle,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,grown up,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,saddle,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,educator,teacher,educator,educator
-qwen3:0.6b,Cairo,Cairo,Colosseum,Cairo International Airport
-qwen3:0.6b,concur,agree,agree,agree
-qwen3:0.6b,weary,tired,listless,drowsy
-qwen3:0.6b,spotless,empty,spotless,spotless
-qwen3:0.6b,petal,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,misplaced,correct,improve,adjust
-qwen3:0.6b,kitty,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,intoxicated,Invalid Response,Invalid Response,Invalid Response
-qwen3:0.6b,vehicle,drive,transport,transportation
-qwen3:0.6b,attempt,start,initiate,begin
-qwen3:0.6b,unattractive,unattractive,unattractive,unattractive
-qwen3:0.6b,trousers,trousers,stole,tux
-qwen3:0.6b,espresso,moka,creamy,blazing
-qwen3:0.6b,sufficient,full,enough,enough
-qwen3:0.6b,orchid,orchid,orchid blossoms,orchid petals
-qwen3:0.6b,hilarious,funny,comical,merry
-qwen3:0.6b,fedora,faded,fitted,fitted
-qwen3:0.6b,deity,divine,light,divine light
-qwen3:0.6b,arid,dry,scorching,salty
-qwen3:0.6b,wager,win,lose,bet
-qwen3:0.6b,spectacles,correct,protect,guide
-qwen3:0.6b,brawl,fight,match,no more
-qwen3:0.6b,leash,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,becoming,become,grow,develop
+qwen3:0.6b,archeology,ancient,history,ancient
+qwen3:0.6b,joker,joker,joker,joker
+qwen3:0.6b,hurtful,hurtful,pain,sadness
+qwen3:0.6b,nacho,nacho,nacho,nacho
+qwen3:0.6b,unsafe,nope,harmful,dangerous
+qwen3:0.6b,hummingbird,hummingbird,hummingbird,habitat
+qwen3:0.6b,coast,coast,waves,shore
+qwen3:0.6b,immature,imaturity,immaturation,immaturation
+qwen3:0.6b,ligament,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,shield,strength,protection,shield
+qwen3:0.6b,vegetarian,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,parcel,container,package,shipment
+qwen3:0.6b,madly,loud,bellow,scream
+qwen3:0.6b,flunk,fluent,flunky,flunk
+qwen3:0.6b,traveler,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,bubble gum,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,expel,pull,get out,remove
+qwen3:0.6b,leaning,leaning down,leaning right,leaning left
+qwen3:0.6b,juicer,knife,chopper,chopsticks
+qwen3:0.6b,hovercraft,plane,fly,operate
+qwen3:0.6b,fabric,knit,weave,silk
+qwen3:0.6b,captivity,lock,captain,captive
+qwen3:0.6b,lamb,lamb,lamb,lamb
+qwen3:0.6b,failure,end,problem,crisis
+qwen3:0.6b,balls,ball,bangles,baller
+qwen3:0.6b,governance,rule,order,control
+qwen3:0.6b,electricity,power,energy,No more
+qwen3:0.6b,celebrity,model,artist,star
+qwen3:0.6b,masturbate,wet,bed,get
+qwen3:0.6b,extroverted,outgoing,at ease,confident
+qwen3:0.6b,breed,raise,breed,raise
+qwen3:0.6b,frustrated,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,goodwill,strength,power,business
+qwen3:0.6b,dialogue,communication,discourse,No more
+qwen3:0.6b,unrealistic,unreal,unrealistic,unreal
+qwen3:0.6b,hobble,hobble,hobble down,hobble around
+qwen3:0.6b,unripe,unripe,unripe,unripe
+qwen3:0.6b,boxer,strongest,second,third
+qwen3:0.6b,laborer,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,atheism,belief,absence,nonexistence
+qwen3:0.6b,autumn,autumn,fall,harvest
+qwen3:0.6b,repress,repress,repress,repress
+qwen3:0.6b,sweatshop,sweat,shop,shop
+qwen3:0.6b,veer,turn,direction,veer
+qwen3:0.6b,mystical,mystic,mystic,mystic
+qwen3:0.6b,redwood,tree,forest,wood
+qwen3:0.6b,gods,strongest,most,gods
+qwen3:0.6b,elbow,elbow,elbow handle,elbow support
+qwen3:0.6b,sterile,strongest,most,least
+qwen3:0.6b,mailbox,mail,box,mailslot
+qwen3:0.6b,rundown,thorough,rundown,rundown
+qwen3:0.6b,execute,execute,execute,execute
+qwen3:0.6b,hitchhike,hitch,hike,hike
+qwen3:0.6b,intoxicate,addict,consume,No more responses
+qwen3:0.6b,complete,finish,complete,finish
+qwen3:0.6b,vomit,vomit,vomiting,vomiting
+qwen3:0.6b,civilization,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,let,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,gifted,gifted,talented,informed
+qwen3:0.6b,whiskers,whiskers,whisker,whisk
+qwen3:0.6b,lore,story,tales,history
+qwen3:0.6b,Norway,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,petrol,burn,gas,petrol
+qwen3:0.6b,Islam,Muslim,Hijri,Sunni
+qwen3:0.6b,mitten,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,cozy,quiet,homey,No more responses
+qwen3:0.6b,hum,hum,hiss,hearing
+qwen3:0.6b,head,head,head,head
+qwen3:0.6b,mints,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,increasing,fast,time,raterate
+qwen3:0.6b,chauffeur,driver,guide,drive
+qwen3:0.6b,constant,unstoppable,steady,unsteady
+qwen3:0.6b,zeal,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,periscope,view,guide,mirror
+qwen3:0.6b,oddity,odd,unique,excellent
+qwen3:0.6b,monotonous,unbroken,steady,uninterrupted
+qwen3:0.6b,stupid,lack,naive,ungrateful
+qwen3:0.6b,hers,herself,hersay,herso
+qwen3:0.6b,scribe,write,write,write
+qwen3:0.6b,campfire,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,cartoon,cartoon,characters,animation
+qwen3:0.6b,contempt,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,cactus,cactus,bloom,cactus
+qwen3:0.6b,fad,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,since,time,future,now
+qwen3:0.6b,tom,tom,tomato,tom
+qwen3:0.6b,devil,devil,devilish,devils
+qwen3:0.6b,tuba,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,algae,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,crows,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,cooler,warm,heat,sunshine
+qwen3:0.6b,martial art,Invalid Response,Invalid Response,Invalid Response
+qwen3:0.6b,medic,medicine,drug,medicant
+qwen3:0.6b,pesky,scary,terrible,unpleasant
+qwen3:0.6b,stretch,muscle,lengthen,tense
+qwen3:0.6b,thrifty,thrifty,thrift,thrifty
+qwen3:0.6b,amass,accumulate,gather,collect
+qwen3:0.6b,flawed,defect,blemish,misshapen
+qwen3:0.6b,term,term,definition,definition

@@ -1,101 +1,101 @@
 model,cue,A1,A2,A3
-gemma3:4b,Cheddar,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,Parmesan,Cheese,Italy,Food
-gemma3:4b,bubonic,plague,disease,rats
-gemma3:4b,moo,cow,farm,animal
-gemma3:4b,halt,stop,pause,finish
-gemma3:4b,inebriated,drunk,alcohol,intoxicated
-gemma3:4b,arachnid,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,elm,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,brie,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,pituitary,hormone,gland,brain
-gemma3:4b,wick,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,perspire,sweat,heat,humidity
-gemma3:4b,feline,cat,tiger,leopard
-gemma3:4b,mozzarella,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,brewery,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,smooch,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,sill,gravity,stone,support
-gemma3:4b,cob,hawk,bird,snake
-gemma3:4b,newborn,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,physician,doctor,medicine,healthcare
-gemma3:4b,teddy,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,marrow,bone,growth,tissue
-gemma3:4b,impolite,rude,discourteous,No more responses
-gemma3:4b,cobra,venom,snake,danger
-gemma3:4b,perhaps,uncertainty,doubt,maybe
-gemma3:4b,retina,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,oink,pig,swine,animal
-gemma3:4b,hound,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,Sahara,Desert,Heat,Sand
-gemma3:4b,not good,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,grizzly,bear,wildlife,nature
-gemma3:4b,uncooked,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,maize,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,meow,cat,animal,No more responses
-gemma3:4b,fir,tree,wood,forest
-gemma3:4b,loaf,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,holster,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,search engine,Google,Bing,Yahoo
-gemma3:4b,lager,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,inexpensive,cheap,affordable,budget
-gemma3:4b,fib,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,viper,snake,poison,danger
-gemma3:4b,yolk,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,grater,cheese,food,knife
-gemma3:4b,heifer,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,down under,Australia,Oceania,Birds
-gemma3:4b,cashew,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,steed,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,exhausted,tired,weary,sleep
-gemma3:4b,comprehend,understanding,knowledge,analysis
-gemma3:4b,cheerful,happy,joyful,optimistic
-gemma3:4b,obese,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,itch,scratch,skin,relief
-gemma3:4b,nostril,breath,smell,air
-gemma3:4b,spud,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,udder,cow,milk,dairy
-gemma3:4b,hare,fast,rabbit,swift
-gemma3:4b,parchment,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,weep,sadness,tears,loss
-gemma3:4b,perspiration,sweat,humidity,heat
-gemma3:4b,despise,hatred,disgust,resentment
-gemma3:4b,honeydew,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,sirloin,beef,meat,steak
-gemma3:4b,serpent,danger,snake,poison
-gemma3:4b,beagle,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,cod,fish,sea,ocean
-gemma3:4b,tardy,late,delay,missed
-gemma3:4b,stallion,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,gust,wind,storm,pressure
-gemma3:4b,purr,cat,sleep,comfort
-gemma3:4b,jigsaw,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,dromedary,camel,desert,animal
-gemma3:4b,automobile,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,giggle,laughter,joy,amusement
-gemma3:4b,grown up,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,saddle,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,educator,teacher,student,learning
-gemma3:4b,Cairo,Egypt,Pyramids,History
-gemma3:4b,concur,agreement,consent,harmony
-gemma3:4b,weary,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,spotless,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,petal,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,misplaced,wrong,error,confusion
-gemma3:4b,kitty,cat,kitten,No more responses
-gemma3:4b,intoxicated,drunk,tipsy,weak
-gemma3:4b,vehicle,car,bus,train
-gemma3:4b,attempt,effort,try,success
-gemma3:4b,unattractive,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,trousers,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,espresso,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,sufficient,enough,adequate,No more responses
-gemma3:4b,orchid,beauty,fragrance,delicate
-gemma3:4b,hilarious,laughter,funny,joyful
-gemma3:4b,fedora,hat,suit,style
-gemma3:4b,deity,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,arid,desert,dry,heat
-gemma3:4b,wager,risk,bet,chance
-gemma3:4b,spectacles,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,brawl,Invalid Response,Invalid Response,Invalid Response
-gemma3:4b,leash,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,becoming,growth,change,progress
+gemma3:4b,archeology,digs,history,excavation
+gemma3:4b,joker,card,laugh,risk
+gemma3:4b,hurtful,pain,suffering,wounds
+gemma3:4b,nacho,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,unsafe,danger,risk,hazard
+gemma3:4b,hummingbird,flight,color,beauty
+gemma3:4b,coast,ocean,beach,sand
+gemma3:4b,immature,childhood,youth,adolescent
+gemma3:4b,ligament,bone,joint,tissue
+gemma3:4b,shield,defense,protection,security
+gemma3:4b,vegetarian,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,parcel,shipping,delivery,package
+gemma3:4b,madly,chaos,panic,frustration
+gemma3:4b,flunk,failure,disappointment,regret
+gemma3:4b,traveler,journey,adventure,exploration
+gemma3:4b,bubble gum,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,expel,force,remove,discard
+gemma3:4b,leaning,balance,stability,support
+gemma3:4b,juicer,orange,fruit,machine
+gemma3:4b,hovercraft,water,vehicle,surface
+gemma3:4b,fabric,cotton,thread,material
+gemma3:4b,captivity,prison,cage,restriction
+gemma3:4b,lamb,meat,sheep,innocence
+gemma3:4b,failure,defeat,loss,sadness
+gemma3:4b,balls,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,governance,leadership,authority,control
+gemma3:4b,electricity,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,celebrity,fame,publicity,influence
+gemma3:4b,masturbate,pleasure,sex,shame
+gemma3:4b,extroverted,social,outgoing,friendly
+gemma3:4b,breed,dog,animal,species
+gemma3:4b,frustrated,anger,irritation,resentment
+gemma3:4b,goodwill,kindness,benevolence,generosity
+gemma3:4b,dialogue,conversation,speaking,words
+gemma3:4b,unrealistic,fantasy,dreamy,illusion
+gemma3:4b,hobble,limp,pain,struggle
+gemma3:4b,unripe,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,boxer,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,laborer,work,sweat,effort
+gemma3:4b,atheism,belief,doubt,reason
+gemma3:4b,autumn,fall,leaves,harvest
+gemma3:4b,repress,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,sweatshop,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,veer,turn,shift,deviation
+gemma3:4b,mystical,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,redwood,forest,trees,nature
+gemma3:4b,gods,religion,divinity,faith
+gemma3:4b,elbow,bend,joint,curve
+gemma3:4b,sterile,clean,hospital,disinfectant
+gemma3:4b,mailbox,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,rundown,collapse,failure,debris
+gemma3:4b,execute,action,command,order
+gemma3:4b,hitchhike,travel,adventure,journey
+gemma3:4b,intoxicate,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,complete,finish,end,achieve
+gemma3:4b,vomit,nausea,regret,illness
+gemma3:4b,civilization,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,let,rain,storm,weather
+gemma3:4b,gifted,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,whiskers,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,lore,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,Norway,fjord,mountains,people
+gemma3:4b,petrol,fuel,gas,engine
+gemma3:4b,Islam,Faith,Religion,Belief
+gemma3:4b,mitten,winter,gloves,warm
+gemma3:4b,cozy,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,hum,music,sound,vibration
+gemma3:4b,head,brain,skull,neck
+gemma3:4b,mints,fresh,cool,clean
+gemma3:4b,increasing,growth,expansion,progress
+gemma3:4b,chauffeur,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,constant,stability,firmness,steadiness
+gemma3:4b,zeal,passion,energy,inspiration
+gemma3:4b,periscope,submarine,binoculars,observation
+gemma3:4b,oddity,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,monotonous,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,stupid,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,hers,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,scribe,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,campfire,warmth,smell,stories
+gemma3:4b,cartoon,animation,drawing,character
+gemma3:4b,contempt,disrespect,scorn,disdain
+gemma3:4b,cactus,desert,prickly,arid
+gemma3:4b,fad,death,loss,memory
+gemma3:4b,since,time,result,perhaps
+gemma3:4b,tom,father,name,child
+gemma3:4b,devil,sin,darkness,chaos
+gemma3:4b,tuba,brass,instrument,music
+gemma3:4b,algae,green,ocean,photosynthesis
+gemma3:4b,crows,darkness,death,ominous
+gemma3:4b,cooler,ice,cold,refresh
+gemma3:4b,martial art,combat,discipline,training
+gemma3:4b,medic,hospital,doctor,nurse
+gemma3:4b,pesky,irritation,annoyance,nuisance
+gemma3:4b,stretch,elongation,flexibility,recovery
+gemma3:4b,thrifty,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,amass,wealth,money,growth
+gemma3:4b,flawed,Invalid Response,Invalid Response,Invalid Response
+gemma3:4b,term,definition,meaning,concept
