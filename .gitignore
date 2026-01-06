@@ -3,3 +3,11 @@
 *.iml
 *.ipr
 *.iws
+
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
