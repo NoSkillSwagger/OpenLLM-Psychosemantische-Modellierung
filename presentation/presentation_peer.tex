@@ -16,406 +16,177 @@
 \setbeamercolor{alerted text}{fg=myblue}
 \setbeamercolor{structure}{fg=myblue}
 
+% --- Visible but clean Metropolis blocks ---
+\setbeamertemplate{blocks}[rounded]
+
+\setbeamercolor{block title}{
+  fg=white,
+  bg=black!70
+}
+
+\setbeamercolor{block body}{
+  fg=black,
+  bg=black!8
+}
+
+\setbeamerfont{block title}{series=\bfseries}
+
+
 % Encoding and language (compatible with pdfLaTeX)
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage{xcolor}
 \usepackage{ulem}
+\usepackage{adjustbox}
 
 % Spacing
 \setlength{\parskip}{4pt}
 
-\title{Kognition \& Künstliche Intelligenz}
-\subtitle{Denken, Fühlen und Verhalten im Zeitalter der AI}
-\author{Seminar}
-\date{\today}
+% Meta-Daten
+\title[OpenLLM-Psychosemantik]{Psychosemantische Modellierung}
+%\subtitle{Bedeutungsräume und Assoziationen in LLMs vs. Menschen}
+\author{Lukas \and Peer}
+\institute{ }
+\date{ }
 
-% -----------------------------------------------------------
 \begin{document}
 
-% --------------------------
-% Title Page
-% --------------------------
-{
-\setbeamertemplate{footline}{}
-\begin{frame}[plain]
+% Titelfolie
+\begin{frame}
     \titlepage
 \end{frame}
-}
 
-% --------------------------
-% Section 1
-% --------------------------
-\begin{frame}{Agenda}
+
+% Fragestellung
+\begin{frame}{Themenstellung}
+    \begin{block}{Forschungsfrage}
+        Zeigen LLMs ähnliche \textbf{semantische Verwandtschaften}, \textbf{Assoziationen} und \textbf{Bedeutungscluster} wie Menschen?
+    \end{block}
+
+    \begin{itemize}
+        \item Gibt es überlappende Bedeutungsräume?
+        \item Wo treten systematische Abweichungen auf?
+        \item Gibt es Unterschiede zwischen verschiedenen Modell Familien?
+        \item Spielt die größe des Modells eine Rolle?
+        \item Welche Modellgröße erlaubt eine automatische Auswertung der Ergebnisse?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Modelle}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{Modellfamilie} & \textbf{Modell} \\
+            \hline
+            Qwen3                  & qwen3:0.6b      \\
+                                   & qwen3:1.7b      \\
+                                   & qwen3:8b        \\
+                                   & qwen3:14b       \\
+                                   & qwen3:30b       \\
+            \hline
+            Gemma3                 & gemma3:270m     \\
+                                   & gemma3:1b       \\
+                                   & gemma3:4b       \\
+                                   & gemma3:12b      \\
+                                   & gemma3:27b      \\
+            \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+% Beispielaufgaben
+\begin{frame}{Aufgabenformate}
+    \begin{block}{Freie Assoziation}
+        \textit{Geben Sie zu folgendem Stichwort bis zu drei Assoziationen mit jeweils einem Wort an.}
+
+        \vspace{0.3cm}
+
+        \textbf{Datensatz:} Wordsim353 (Finkelstein, Lev, et al.)
+    \end{block}
+
+    \begin{block}{Ähnlichkeitsbewertung}
+        \textit{Bewerten Sie das folgende Wortpaar nach Ähnlichkeit auf einer Skala von 0-10.}
+
+        \vspace{0.3cm}
+
+        \textbf{Datensatz:} SWOW-18EN (Wulff et al.)
+    \end{block}
+\end{frame}
+
+\begin{frame}{Prompt -- Systemanweisung}
+    \begin{block}{Prompt}
+        \scriptsize
+        <<SYS>> \\
+        \quad You MUST follow these rules: \\
+        \begin{enumerate}
+            \item Do NOT output reasoning, chain-of-thought, thinking process, analysis, hidden thoughts, XML tags like <think>, or any extra formatting.
+            \item Output ONLY one single line with exactly four semicolon-separated fields.
+            \item Format: cue;A1;A2;A3
+            \item A1-A3 MUST be exactly one word each (no spaces).
+            \item If you cannot generate A2 or A3, use exactly: No more responses
+            \item Any extra text makes the output INVALID.
+        \end{enumerate}
+        <</SYS>>
+    \end{block}
+\end{frame}
+
+\begin{frame}{Prompt -- Wordassoziation}
+    \begin{block}{Prompt}
+        \scriptsize
+        You will perform a word association task.
+
+        \medskip
+        Task:\\
+        Given a cue word, produce up to three single-word associations:\\
+        A1 = strongest association\\
+        A2 = second association\\
+        A3 = third association
+
+        \medskip
+        Output format (MANDATORY):\\
+        \texttt{cue;A1;A2;A3}
+
+        \medskip
+        Cue:\\
+        \texttt{\{cue\}}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{Prompt -- Ähnlichkeitsbewertung}
+    \begin{block}{Prompt}
+        \scriptsize
+        You will perform a word similarity rating task.
+
+        \medskip
+        Task:\\
+        You will be given a pair of English words.\\
+        Your job is to judge how similar their meanings are.
+
+        \medskip
+        Now rate the following word pair:
+
+        \medskip
+        Word 1: \texttt{\{w1\}}
+
+        \medskip
+        Word 2: \texttt{\{w2\}}
+    \end{block}
+
+
+\end{frame}
+
+% Methodik
+\begin{frame}{Experimentelles Setup / Verfahrensweise}
     \begin{enumerate}
-        \item Grunddefinition von Kognition
-        \item Cognitive Offloading
-        \item AI Dependence
-        \item AI-Therapie
+        \item Setup von \textbf{Ollama} mit verschiedenen Open-LLMs
+        \item Erste manuelle Tests
+        \item Erstellung der Pipelines für automatiserte Experimente
+        \item Datenerhebung mit LLMs
+        \item Statistische Analyse und Vergleich mit menschlichen Datensätzen
     \end{enumerate}
 \end{frame}
-
-\section{Was ist Kognition?}
-
-\begin{frame}{Kognition — Grunddefinition}
-    \begin{itemize}
-        \item Kognition = mentale Informationsverarbeitung im Gehirn
-        \item Umfasst:
-              \begin{itemize}
-                  \item Wahrnehmung — Input interpretieren
-                  \item Aufmerksamkeit — Fokus steuern
-                  \item Gedächtnis — Wissen speichern abrufen
-                  \item Denken \& Problemlösen — Muster verknüpfen lösen
-                  \item Entscheidungen — Handlungen ableiten wählen
-                  \item Soziale Kognition — Verstehen, Fühlen \& Interagieren mit Anderen
-              \end{itemize}
-        \item Kognition im AI-Kontext: Wie AI die menschliche Kognition unterstützt, verändert, erweitert oder ersetzt
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Was gibt es an AI im kognitiven Kontext?}
-    \begin{itemize}
-        \item LLMs → generieren, erklären, umschreiben
-              \begin{itemize}
-                  \item Code-Assistenten → Autocomplete, Code-Vorschläge
-                  \item Lern-AI → Tutoring, Quiz-Erstellung, Lernpfade
-                  \item Companion-AI → soziale Interaktion
-              \end{itemize}
-        \item Bild-Generierung → erzeugen, bearbeiten, erweitern von Bildern
-        \item Speech-AI → Sprache zu Text / Text zu Sprache
-        \item OCR-Tools → Text aus Bildern/PDFs erkennen, digitalisieren
-        \item Analyse-AI → Muster erkennen, Daten auswerten
-    \end{itemize}
-    AI-Tools dienen dazu, Denken, Wahrnehmen, Produzieren, Analysieren oder Entscheiden zu unterstützen oder auszulagern
-\end{frame}
-
-\begin{frame}{Gesellschaftliche Relevanz: Kognition \& AI}
-    \begin{itemize}
-        \item AI ist nicht nur ein Tool, sondern ein \textbf{kognitiver Interaktionspartner}
-        \item Einfluss auf: Lernen, Arbeiten, Emotionen, Beziehungen
-        \item Zentrale Frage: Unterstützt AI unser Denken — oder ersetzt es?
-        \item Gesellschaftlicher Polarisierung: \textbf{Panik vs. unkritische Nutzung}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Wordcloud: Kognition \& AI}
-    Mögliche Fragen
-    \begin{itemize}
-        \item Wofür nutzt du AI in deinem Studium am häufigsten?
-        \item Größetes Risiko/Vorteil durch AI im Studium ist für mich
-        \item AI ersetzt Denken? (Maybe Skala 1-5)
-        \item Verwendung von AI macht mich produktiver?
-        \item Verwendung von AI resultiert in besseres Ergebniss?
-    \end{itemize}
-    Antworten sollten in die Themen Cognitive Offloading, AI Dependence, AI Therapy fallen für nicen Übergang
-    \begin{center}
-        Mögliche Begriffe:
-        Cognitive Load — Cognitive Offloading — Cognitive Debt — Anthropomorphism — Social Cognition — Attachment — Trust — AI Dependence — Productivity — Workslop — Learning — Memory — Attention — Decision-Making — Coping — Vulnerability — Human-AI Interaction
-    \end{center}
-\end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Cognitive Offloading}
-
-\begin{frame}{Wie man sein Vortrag Cognitive Offloaded}
-    Hallo ChatGPT. Kannst du mir ein paar latex Folien generieren zum Thema Cognitive Offloading im Kontext von Künstlicher Intelligenz? Bitte baue folgende Punkte mit ein: Einführung, Typische Offloading-Tasks, Kurz- vs. Langfristige Effekte, Workslop \& Cognitive Debt, Kognitive Ownership-Lücke, Beispiele von Cognitive Offloading. Bitte halte die Folien stichpunktartig und übersichtlich.
-    TODO: Andere Farbe für die GPT folien
-\end{frame}
-
-\begin{frame}{Cognitive Offloading — Einführung}
-    \begin{itemize}
-        \item Definition: Mentale Arbeit wird an externe Systeme ausgelagert
-        \item Ziel: kognitive Last reduzieren, Effizienz steigern
-        \item Historische Beispiele: Taschenrechner, Notizen, Kalender
-        \item Heute: AI-Systeme übernehmen komplexere Tasks (Text, Planung, Code)
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Typische Offloading-Tasks mit AI}
-    \begin{itemize}
-        \item Textaufbereitung: Zusammenfassungen, Übersetzungen
-        \item Recherche \& Informationsfilterung
-        \item OCR / Dokumentenerkennung
-        \item Programmierhilfe: Code-Vorschläge, Autocomplete
-        \item Planung \& Organisation: Terminplanung, To-Do-Listen
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Cognitive Offloading: Kurz- vs. Langfristige Effekte}
-    \begin{itemize}
-        \item \textbf{Short-Term Benefits:}
-              \begin{itemize}
-                  \item Zeitersparnis
-                  \item Geringere mentale Belastung
-                  \item Schnellere Produktivität bei Routineaufgaben
-              \end{itemize}
-        \item \textbf{Long-Term Costs:}
-              \begin{itemize}
-                  \item Weniger aktives Denken \& Lernen
-                  \item Abhängigkeit von AI
-                  \item Geringere Wissensverankerung
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Workslop \& Cognitive Debt}
-    \begin{itemize}
-        \item \textbf{Workslop:} AI erzeugt Output, der überprüft/überarbeitet werden muss
-        \item \textbf{Cognitive Debt:} mentale Kosten durch zusätzliche Überarbeitung
-        \item Folge: kurzfristige Entlastung, langfristige Belastung
-        \item Risiko: Qualität der Inhalte \& Eigenverantwortung sinken
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Kognitive Ownership-Lücke}
-    \begin{itemize}
-        \item Menschen fühlen weniger ``Ownership`` für AI-generierte Inhalte
-        \item Konsequenzen:
-              \begin{itemize}
-                  \item Weniger Erinnerung \& Verständnis
-                  \item Weniger Engagement im Lern- oder Arbeitsprozess
-                  \item Inhalte werden als ``nicht meine eigenen`` wahrgenommen
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Beispiele von Cognitive Offloading}
-    \begin{itemize}
-        \item Programmieren: Autocomplete, Copilot → schneller, weniger Debugging-Erfahrung
-        \item Meetings / Workshops: AI generiert Slides / Zusammenfassungen
-        \item Wissenschaft \& Forschung: schnelle Literaturübersicht, Datenanalyse
-        \item Vorteil: Effizienzsteigerung \& kognitive Entlastung
-        \item Nachteil: Risiko für Workslop, Cognitive Debt, geringere Ownership
-    \end{itemize}
-    Studie: Cognitive Load and Productivity Implications in Human‑Chatbot Interaction
-\end{frame}
-
-\begin{frame}{Fallbeispiel: Foliensatz generieren mit ChatGPT}
-    Bilder von den überarbeiteten Folien, die Chati generiert hat. TODO!! Sobalt Farben usw. gefixed sind
-\end{frame}
-
-\begin{frame}{Fallbeispiel: Foliensatz generieren mit ChatGPT}
-    \begin{itemize}
-        \item Cognitive Offloading: Zeit gespart, mentale Last reduziert
-        \item Workslop \& Cognitive Debt: Folien sagen teilweise nichts neues aus, müssen überarbeitet werden
-        \item Kognitive Ownership-Lücke: Wenig Verbindung zum generierten Inhalt
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Studie: AI‑Generated “Workslop” Is Destroying Productivity}
-
-    \begin{itemize}
-        \item Fragestellung: Übernimmt Workslop den Arbeitsaltag in Unternhemen und untergräbt die Produktivität und Zusammenarbeit?
-        \item Ergebniss: 40\% der Befragten angaben, innerhalb eines Monats ``workslop`` erhalten zu haben
-    \end{itemize}
-
-    \textbf{Workslop Tax:}
-    \begin{itemize}
-        \item Inhalte schwer zu interpretieren
-        \item Inhalte müssen korrigiert werden
-        \item Inhalte müssen neu erstellt werden
-    \end{itemize}
-\end{frame}
-
-
-
-
-
-
-
-
-
-TODO: Folgendes alles Workslop, muss noch ge cognetive debt werden
-Früher Handy Abhängigkeit,
-Erklärung Sozial kognition
-daher studie ob ai dependence zu pyischen Problemen führt 
-Studie erklären
-Fazit davon
-
-
-Nils Kommentare: 
-- Abhängigkeit begriff erstmal erklären
-- Quellen in die Folien reinschreiben
-- Bei Ownership Lücke noch die Studie: Cognitive Load and Productivity Implications in Human‑Chatbot Interaction
-. GGf die CHaty folien rausnehmen und am ende sagen hier hab dasm mal so gemacht aaber ewig überarbeitet
-- am ende offene Diskusion
-- TODO: Woche davor Prof Gliederung und Diskusions Fragen schicken und Zeitplan werlcher Teil wielange dauert
-
-
-\section{AI Dependence}
-
-\begin{frame}{Früher Handy, heute AI}
-    \begin{itemize}
-        \item Gefühl, ohne AI nicht produktiv/kreative/validiert zu sein
-        \item Kombination aus:
-              \begin{itemize}
-                  \item Kognitivem Offloading
-                  \item Sozial-kognitiven Bindungsillusion
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{AI = menschlich?}
-    \begin{itemize}
-        \item AI generiert kontext-sensitive, sprachlich plausible Antworten
-        \item Gehirn sagt AI = Gesprächpartner statt Tool
-        \item Beispiel: Dialog Prompt statt reiner instruktiver Prompt
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Studie: AI Technology panic—is AI Dependence Bad for Mental Health?}
-
-    Untersuchung der Beziehung zwischen psychischen Problemen (Angst/Depression) und ``AI-Dependence`` bei Jugentlichen
-
-    Ergebnisse:
-    \begin{itemize}
-        \item Psychische Probleme (Depression, Angst) wirken vorhersagend auf spätere AI-Dependence
-        \item AI-Dependence sagt nicht vorher, dass psychische Probleme zunehmen
-        \item Jugendliche mit emotionalen Belastungen nutzen AI häufiger als Coping-Strategie (``Escape`` oder ``soziale Unterstützung``)
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Woher kommt das?}
-    Vermenschlichung von AI!
-    \begin{itemize}
-        \item Zuschreibung von mentalen Zuständen (z. B. „AI versteht mich…“)
-        \item Soziale Bindung zu nicht existierenden Person
-        \item Vertrauen kann entstehen, obwohl die Beziehung einseitig ist
-        \item AI wird Ansprechpartner, statt Mensch -> Gefahr zur AI Dependency
-    \end{itemize}
-\end{frame}
-
-
-// TODO:
-Vermenschlichung kann zu romantischen Beziehungen führen
-Vertauen und tba kann zu positiven und negativen Situationen führen
-Good Case: tba
-Bad Case: tba
-
-
-\begin{frame}{Romantische Beziehungen zu AI}
-    Studie: Can people experience romantic love for artificial intelligence?
-    \begin{itemize}
-        \item Beispiel für emotionale Bindung zu einer Companion-AI:
-        \item Beziehung/``Liebe`` zu :contentReference[oaicite:4]{index=4}
-        \item Dient als Fallbeispiel: Starke Bindung, aber meist *kein Hinweis auf Verhaltensgefahr*
-        \item Relevant zur Erklärung emotionaler \& sozial-kognitiver Projektion
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Extremfall: AI-Bestärkung und Gewaltpotential}
-    \begin{itemize}
-        \item Extrembeispiel technologisch verstärkter Radikalisierung
-        \item Fall:
-              \begin{itemize}
-                  \item Eindringen ins Schloss mit Armbrust \& AI-Chatbestärkung
-                  \item durch :contentReference[oaicite:5]{index=5}
-              \end{itemize}
-        \item Zentrale Vorlesungs-Botschaft:
-              \begin{itemize}
-                  \item Nicht repräsentativ für AI-Nutzung
-                  \item Aber wichtig, um gesellschaftliche Risiken sozial-kognitiver Bestärkung zu reflektieren
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Takeaways — Denkpartner oder Denkkrücke?}
-    \begin{itemize}
-        \item AI kann Denkprozesse entlasten und erweitern
-        \item Risiken entstehen, wenn:
-              \begin{itemize}
-                  \item Denken zu stark delegiert wird (Lernabflachung)
-                  \item Schlechte Inhalte (Workslop) entstehen → Mehraufwand
-                  \item Cognitive Debt über Zeit steigt (Überarbeitung statt Verankerung)
-                  \item Ownership-Gefühl verloren geht
-              \end{itemize}
-        \item Lösung: bewusste Gestaltung + aktiver, reflektierter Einsatz von AI
-    \end{itemize}
-\end{frame}
-
-
-
-
-Hier übernimmt Mister Pookiy peerr
-
-\begin{frame}{Übergang: AI in therapeutischen \& sozialen Rollen}
-    \begin{itemize}
-        \item Hinweis: AI kann auch als *therapeutischer Unterstützer* wirken
-        \item Zentrale Fragen für den nächsten Vortrag:
-              \begin{itemize}
-                  \item Wann ist emotionale AI-Nutzung hilfreich?
-                  \item Wann wird sie zur Krücke?
-              \end{itemize}
-        \item Dein Kollege übernimmt hier mit dem Thema: „AI Therapy“
-    \end{itemize}
-\end{frame}
-
-
-
-
-
-
-
-\section{Offloading Verbesserte Folien}
-
-\begin{frame}{Cognitive Offloading — Einführung}
-    \begin{itemize}
-        \item Definition: Mentale Arbeit wird an externe Systeme ausgelagert
-        \item Ziel: kognitive Last reduzieren, Effizienz steigern
-        \item Historische Beispiele: Taschenrechner \sout{, Notizen, Kalender}
-        \item Heute: AI-Systeme \sout{übernehmen komplexere Tasks (Text, Planung, Code)}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Typische Offloading-Tasks mit AI}
-    \begin{itemize}
-        \item \sout{Textaufbereitung: Zusammenfassungen, Übersetzungen}
-        \item \sout{Recherche \& Informationsfilterung}
-        \item \sout{OCR / Dokumentenerkennung}
-        \item \sout{Programmierhilfe: Code-Vorschläge, Autocomplete}
-        \item \sout{Planung \& Organisation: Terminplanung, To-Do-Listen}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Cognitive Offloading: Kurz- vs. Langfristige Effekte}
-    \begin{itemize}
-        \item \textbf{\sout{Short-Term Benefits:} Kurzfristige Vorteile:}
-              \begin{itemize}
-                  \item Zeitersparnis
-                  \item Geringere mentale Belastung
-                  \item Schnellere Produktivität bei Routineaufgaben
-              \end{itemize}
-        \item \textbf{\sout{Long-Term Costs:} Langfristige Nachteile:}
-              \begin{itemize}
-                  \item Weniger aktives Denken \& Lernen
-                  \item Abhängigkeit von AI
-                  \item Geringere Wissensverankerung
-              \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{\sout{Workslop \& Cognitive Debt} Die großen Buzzwords}
-    \begin{itemize}
-        \item \textbf{Workslop:} AI erzeugt Output, der überprüft/überarbeitet werden muss
-        \item \sout{\textbf{Cognitive Debt}}\textbf{Cognitive Debt/Workslop Tax:} mentale Kosten durch zusätzliche Überarbeitung
-        \item Folge: kurzfristige Entlastung, langfristige Belastung
-        \item Risiko: Qualität der Inhalte \& Eigenverantwortung sinken
-    \end{itemize}
-\end{frame}
-
 
 \end{document}
