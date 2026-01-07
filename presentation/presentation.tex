@@ -1,0 +1,393 @@
+\documentclass[12pt]{beamer}
+
+% --------------------------
+% Modernes Theme
+% --------------------------
+\usetheme[numbering=none]{metropolis}
+\usefonttheme{professionalfonts}
+
+% Farbschema
+\definecolor{myblue}{HTML}{123B75}
+\definecolor{myturq}{HTML}{2BC4B6}
+
+\setbeamercolor{title}{fg=myblue}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{progress bar}{fg=myturq}
+\setbeamercolor{alerted text}{fg=myblue}
+\setbeamercolor{structure}{fg=myblue}
+
+% --- Visible but clean Metropolis blocks ---
+\setbeamertemplate{blocks}[rounded]
+
+\setbeamercolor{block title}{
+  fg=white,
+  bg=black!70
+}
+
+\setbeamercolor{block body}{
+  fg=black,
+  bg=black!8
+}
+
+\setbeamerfont{block title}{series=\bfseries}
+
+% Encoding and language (compatible with pdfLaTeX)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+\usepackage{ulem}
+
+% Spacing
+\setlength{\parskip}{4pt}
+
+\title[OpenLLM-Psychosemantik]{Psychosemantische Modellierung}
+%\subtitle{Bedeutungsräume und Assoziationen in LLMs vs. Menschen}
+\author{Lukas Göbl \& Peer Schäfer}
+\institute{ }
+\date{ }
+
+% -----------------------------------------------------------
+\begin{document}
+
+% --------------------------
+% Title Page
+% --------------------------
+
+
+% Titelfolie
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+% Fragestellung
+\begin{frame}{Fragestellung}
+    \begin{block}{Forschungsfrage}
+        Zeigen LLMs ähnliche \textbf{semantische Verwandtschaften}, \textbf{Assoziationen} und \textbf{Bedeutungscluster} wie Menschen?
+    \end{block}
+
+    \begin{itemize}
+        \item Gibt es überlappende Bedeutungsräume?
+        \item Wo treten systematische Abweichungen auf?
+        \item Gibt es Unterschiede zwischen verschiedenen Modellfamilien?
+        \item Spielt die Größe des Modells eine Rolle?
+        \item Welche Modellgröße erlaubt eine automatische Auswertung der Ergebnisse?
+    \end{itemize}
+\end{frame}
+
+% Beispielaufgaben
+\begin{frame}{Aufgabenformate}
+    \begin{block}{Freie Assoziation}
+        \textit{Geben Sie zu folgendem Stichwort bis zu drei Assoziationen mit jeweils einem Wort an, wobei die erste Antwort die stärkste Assoziation ist.}
+
+        \vspace{0.3cm}
+
+        \textbf{Datensatz:} SWOW-18EN (De Deyne et al.)
+    \end{block}
+
+    \begin{block}{Ähnlichkeitsbewertung}
+        \textit{Bewerten Sie das folgende Wortpaar nach Ähnlichkeit auf einer Skala von 0-10.}
+
+        \vspace{0.3cm}
+
+        \textbf{Datensatz:} Wordsim353 (Finkelstein, Lev, et al.)
+    \end{block}
+\end{frame}
+
+\begin{frame}{Modelle}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{Modellfamilie} & \textbf{Modell} \\
+            \hline
+            Qwen3                  & qwen3:0.6b      \\
+                                   & qwen3:1.7b      \\
+                                   & qwen3:8b        \\
+                                   & qwen3:14b       \\
+                                   & qwen3:30b       \\
+            \hline
+            Gemma3                 & gemma3:270m     \\
+                                   & gemma3:1b       \\
+                                   & gemma3:4b       \\
+                                   & gemma3:12b      \\
+                                   & gemma3:27b      \\
+            \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Systemanweisung Wortassoziation}
+    \begin{block}{Prompt}
+        \scriptsize
+        <<SYS>> \\
+        \quad You MUST follow these rules: \\
+        \begin{enumerate}
+            \item Do NOT output reasoning, chain-of-thought, thinking process, analysis, hidden thoughts, XML tags like <think>, or any extra formatting.
+            \item Output ONLY one single line with exactly four semicolon-separated fields.
+            \item Format: cue;A1;A2;A3
+            \item A1-A3 MUST be exactly one word each (no spaces).
+            \item If you cannot generate A2 or A3, use exactly: No more responses
+            \item Any extra text makes the output INVALID.
+        \end{enumerate}
+        <</SYS>>
+    \end{block}
+\end{frame}
+
+\begin{frame}{Prompt Wortassoziation}
+    \begin{block}{Prompt}
+        \scriptsize
+        You will perform a word association task.
+
+        \medskip
+        Task:\\
+        Given a cue word, produce up to three single-word associations:\\
+        A1 = strongest association\\
+        A2 = second association\\
+        A3 = third association
+
+        \medskip
+        Output format (MANDATORY):\\
+        \texttt{cue;A1;A2;A3}
+
+        \medskip
+        Cue:\\
+        \texttt{arachnid}
+    \end{block}
+
+    \begin{block}{Antwort des Modells}
+        \scriptsize
+        arachnid;spider;insect;No more responses
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{Systemanweisung Ähnlichkeitsbewertung}
+    \begin{block}{Prompt}
+        \scriptsize
+        <<SYS>> \\
+        \medskip
+        \quad You MUST follow these rules: \\
+        \begin{enumerate}
+            \item  Rate similarity on a scale from 0 to 10.
+            \item 0 = completely unrelated
+            \item 10 = identical in meaning
+            \item Only use integers (0-10).
+            \item Consider semantic similarity, not association or co-occurrence.
+            \item Do NOT explain your reasoning.
+            \item Output must be exactly one line:
+        \end{enumerate}
+        \medskip
+        [word1];[word2];[rating]\\
+        \medskip
+        Example output:\\
+        car;automobile;10\\
+        <</SYS>>
+    \end{block}
+\end{frame}
+
+\begin{frame}{Prompt Ähnlichkeitsbewertung}
+    \begin{block}{Prompt}
+        \scriptsize
+        You will perform a word similarity rating task.
+
+        \medskip
+        Task:\\
+        You will be given a pair of English words.\\
+        Your job is to judge how similar their meanings are.
+
+        \medskip
+        Now rate the following word pair:
+
+        \medskip
+        Word 1: \texttt{sword}
+
+        \medskip
+        Word 2: \texttt{knife}
+    \end{block}
+
+    \begin{block}{Antwort des Modells}
+        \scriptsize
+        sword;knife;7
+    \end{block}
+\end{frame}
+
+% Methodik
+\begin{frame}{Experimentelles Setup / Vorgehensweise}
+    \begin{enumerate}
+        \item Setup von \textbf{Ollama} mit verschiedenen Open-LLMs
+        \item Erste manuelle Tests
+        \item Erstellung der Pipelines für automatisierte Experimente
+        \begin{itemize}
+            \item Freie Assoziation: Die Top-100 R1-Strength und 100 zufällige Stichwörter aus SWOW-18EN
+            \item Ähnlichkeitsbewertung: Vollständiger Wordsim353 Datensatz
+        \end{itemize}
+        \item Datenerhebung mit LLMs
+        \item Statistische Analyse und Vergleich mit menschlichen Datensätzen
+    \end{enumerate}
+\end{frame}
+
+% --------------------------
+% Section 1
+% --------------------------
+
+\section{Ergebnisse: Freie Assoziation}
+
+\begin{frame}{Fehler-Rate}
+    \centering
+    \makebox[\textwidth][c]{%
+        \begin{minipage}{0.7\textwidth}
+            \centering
+            \includegraphics[width=0.8\textwidth]{../data/results/association/analysis/top_100_error_rate.png}
+        \end{minipage}%
+        \hspace{-1.3cm}% negative space
+        \begin{minipage}{0.7\textwidth}
+            \centering
+            \includegraphics[width=0.8\textwidth]{../data/results/association/analysis/random_100_error_rate.png}
+        \end{minipage}%
+    }
+    
+    \vspace{0.5cm}
+    
+    $\rightarrow$ Mehr Parameter führen generell zu einer niedrigeren Fehlerrate
+\end{frame}
+
+\begin{frame}{Antworten von 'Top-100' nach R1 sortiert}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/top_5_responses_by_top_100_r1_strength.png}
+\end{frame}
+
+\begin{frame}{Antworten von 'Random-100' nach R1 sortiert}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/top_5_responses_by_random_r1_strength.png}
+\end{frame}
+
+\begin{frame}{Antworten von 'Top-100' nach R123 sortiert}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/top_5_responses_by_top_100_r123_strength.png}
+\end{frame}
+
+\begin{frame}{Antworten von 'Random-100' nach R123 sortiert}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/top_5_responses_by_random_r123_strength.png}
+\end{frame}
+
+\begin{frame}{Vergleich Top-Antworten nach R1 und R123}
+    Beobachtungen:
+    \begin{itemize}
+        \item Modelle assoziieren ähnlich wie Menschen, wenn Menschen eine eindeutige starke Assoziation haben
+        \item Aber assoziieren unterschiedlich zu Menschen bei Wörtern mit schwächerer/zufälliger menschlicher Assoziation
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Ähnlichkeits-Analyse 'Top-100'}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/top_100_cues_similarity_to_human.png}
+\end{frame}
+
+\begin{frame}{Ähnlichkeits-Analyse 'Random-100'}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/random_100_cues_similarity_to_human.png}
+\end{frame}
+
+\begin{frame}{Freie Assoziation Algorithmus}
+    \centering
+    \begin{tabular}{l l r r r}
+    \hline
+    cue & response & R1 & N & R1.Strength \\
+    \hline
+    arachnid & spider        & 84 & 95 & 0.884 \\
+    arachnid & afraid        & 1  & 95 & 0.011 \\
+    arachnid & disgusting    & 1  & 95 & 0.011 \\
+    arachnid & fear          & 1  & 95 & 0.011 \\
+    arachnid & Harry Potter  & 1  & 95 & 0.011 \\
+    arachnid & insect        & 1  & 95 & 0.011 \\
+    ... \\
+    \hline
+    \end{tabular}
+
+    \vspace{0.5cm}
+
+    $\rightarrow$ Schwache Assoziationen werden genauso gewertet wie ''spider'', wodurch die Ähnlichkeit zu Menschen verfälscht wird
+\end{frame}
+
+\begin{frame}{Angepasste Ähnlichkeits-Analyse 'Top-100'}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/top_100_cues_similarity_to_human_with_only_high_strength.png}
+\end{frame}
+
+\begin{frame}{Angepasste Ähnlichkeits-Analyse 'Random-100'}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/association/analysis/random_100_cues_similarity_to_human_with_only_high_strength.png}
+\end{frame}
+
+\begin{frame}{Fazit Freie Assoziation}
+    \centering
+    \begin{block}{Vermutung}
+        \begin{itemize}
+            \item Wenn Menschen eine eindeutige starke Assoziation haben, ist die Wahrscheinlichkeit höher, dass Modelle diese auch treffen
+            \item Je stärker sich menschliche R1-Antworten streuen, desto geringer ist die Chance, dass das Modell eine menschtypische R1-Antwort trifft
+            \item R123 bleibt in beiden Fällen ähnlich
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\section{Ergebnisse: Ähnlichkeitsbewertung}
+
+\begin{frame}{Fehler-Rate}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/similarity/analysis/1_shot_vs_4_shot_error_rate.png}
+\end{frame}
+
+\begin{frame}{Vergleich Durchschnitt}
+    \centering
+    \includegraphics[width=1\textwidth]{../data/results/similarity/analysis/mean_rating_comparison_human_vs_ai.png}
+
+    $\rightarrow$ Mehr Parameter führen zu niedrigeren Bewertungen
+\end{frame}
+
+\begin{frame}{Fazit Ähnlichkeitsbewertung}
+    Vermutung:
+    \begin{itemize}
+        \item Menschen komprimieren Bedeutungsräume stärker und vergeben tendenziell höhere Ähnlichkeit
+        \item Größere Modelle können Bedeutungen repräsentieren, was den Unterschied zwischen Wörtern vergrößert
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Fazit Ähnlichkeitsbewertung}
+    Beispiel: ''Schwert'' und ''Messer''
+    \begin{itemize}
+        \item Mensch: ''Beides Waffen, also ähnlich'' $\rightarrow$ Hohe Bewertung
+        \item KI:
+            \begin{itemize}
+                \item ''Schwert ist eine Waffe, Messer ein Haushaltsgegenstand''
+                \item ''Schwert ist größer und gefährlicher als Messer''
+                \item ''Schwert ist eher mittelalterlich, Messer modern''
+                \item ...
+            \end{itemize}
+            \item $\rightarrow$ Niedrigere Bewertung
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Finales Fazit des Projekts}
+    \begin{block}{Forschungsfrage}
+        Zeigen LLMs ähnliche \textbf{semantische Verwandtschaften}, \textbf{Assoziationen} und \textbf{Bedeutungscluster} wie Menschen?
+    \end{block}
+
+    Eher ja und nein:
+    \begin{itemize}
+        \item Freie Assoziation: Größere Modelle zeigen ähnliche Assoziationen wie Menschen
+        \item Ähnlichkeitsbewertung: Größere Modelle zeigen niedrigere Bewertungen als Menschen
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Quellen zu Datensätzen}
+    De Deyne, S., Navarro, D., Perfors, A., Brysbaert, M. \& Storms, G. 2018. Measuring the associative structure of English: The “Small World of Words” norms for word association.Manuscript submitted for publication.
+
+    \vspace{0.5cm}
+
+    Finkelstein, Lev, et al. "Placing search in context: The concept revisited." Proceedings of the 10th international conference on World Wide Web. ACM, 2001.
+\end{frame}
+
+\end{document}
