@@ -99,11 +99,11 @@
 % Beispielaufgaben
 \begin{frame}{Aufgabenformate}
     \begin{block}{Freie Assoziation}
-        \textit{Geben Sie zu folgendem Stichwort bis zu drei Assoziationen mit jeweils einem Wort an.}
+        \textit{Geben Sie zu folgendem Stichwort bis zu drei Assoziationen mit jeweils einem Wort an, wobei die erste Antwort die stärkste Assoziation ist.}
 
         \vspace{0.3cm}
 
-        \textbf{Datensatz:} Wordsim353 (Finkelstein, Lev, et al.)
+        \textbf{Datensatz:} SWOW-18EN (De Deyne et al.)
     \end{block}
 
     \begin{block}{Ähnlichkeitsbewertung}
@@ -111,11 +111,11 @@
 
         \vspace{0.3cm}
 
-        \textbf{Datensatz:} SWOW-18EN (De Deyne et al.)
+        \textbf{Datensatz:} Wordsim353 (Finkelstein, Lev, et al.)
     \end{block}
 \end{frame}
 
-\begin{frame}{Prompt -- Systemanweisung}
+\begin{frame}{Prompt -- Systemanweisung (Wortassoziation)}
     \begin{block}{Prompt}
         \scriptsize
         <<SYS>> \\
@@ -187,6 +187,24 @@
         \item Datenerhebung mit LLMs
         \item Statistische Analyse und Vergleich mit menschlichen Datensätzen
     \end{enumerate}
+\end{frame}
+
+\section{Appendix}
+\begin{frame}{Prompt -- Systemanweisung}
+    \begin{block}{Prompt}
+        \scriptsize
+        <<SYS>> \\
+        \quad You MUST follow these rules: \\
+        \begin{enumerate}
+            \item Do NOT output reasoning, chain-of-thought, thinking process, analysis, hidden thoughts, XML tags like <think>, or any extra formatting.
+            \item Output ONLY one single line with exactly four semicolon-separated fields.
+            \item Format: cue;A1;A2;A3
+            \item A1-A3 MUST be exactly one word each (no spaces).
+            \item If you cannot generate A2 or A3, use exactly: No more responses
+            \item Any extra text makes the output INVALID.
+        \end{enumerate}
+        <</SYS>>
+    \end{block}
 \end{frame}
 
 \end{document}
